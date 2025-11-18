@@ -1,0 +1,15 @@
+CREATE SCHEMA `banco2mn` ;
+
+CREATE TABLE `banco2mn`.`bancocuenta` (
+  `bancoCuentaCedula` INT(8) NOT NULL,
+  `bancoCuentaNombre` VARCHAR(45) NOT NULL,
+  `bancoCuentaApellido` VARCHAR(45) NOT NULL,
+  `bancoCuentaTipo_Cuenta` VARCHAR(45) NOT NULL,
+  `bancoCuentaFechaApertura` DATE NOT NULL,
+  `bancoCuentaSaldo` DOUBLE NOT NULL,
+  PRIMARY KEY (`bancoCuentaCedula`));
+
+SELECT VERSION();
+
+INSERT INTO `banco2mn`.`bancocuenta` (`bancoCuentaCedula`, `bancoCuentaNombre`, `bancoCuentaApellido`, `bancoCuentaTipo_Cuenta`, `bancoCuentaFechaApertura`, `bancoCuentaSaldo`) VALUES ('29780611', 'Nora', 'Hernandez', 'CUENTA_SUELDO', '2025-10-08', '2000');
+INSERT INTO `banco2mn`.`bancocuenta` (`bancoCuentaCedula`, `bancoCuentaNombre`, `bancoCuentaApellido`, `bancoCuentaTipo_Cuenta`, `bancoCuentaFechaApertura`, `bancoCuentaSaldo`) VALUES ('56386376', 'Federico', 'Pellufo', 'CAJA_DE_AHORRO', '2025-09-10', '3000');
